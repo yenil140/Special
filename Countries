@@ -249,3 +249,12 @@ local Countries = {
 	['SY'] = { name = 'Syria', decal = 'rbxassetid://6763802796' },
 	['KP'] = { name = 'North Korea', decal = 'rbxassetid://6882819904' },
 }
+
+local getCountry = function(code)
+	return Countries[code]	
+end
+
+return {
+	Countries = Countries,
+	getCountry = getCountry
+}
